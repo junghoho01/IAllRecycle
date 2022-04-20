@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardUserActivity">
+
+<!--    Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_toolbar02">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="User Dashboard"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subTitlev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:layout_centerHorizontal="true"
+            android:text="abc@example.com"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_logout_white" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageButton"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/logoutBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/temporary_profile" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subTitlev"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="27dp"
+            android:text="Hi, Unknown: "
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginLeft="60dp"
+            android:text="0 Points"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/baloo"
+        android:text="News"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/displayNewsList"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginTop="40dp"
+        tools:listitem="@layout/display_news_item" />
+
+    <TextView
+        android:id="@+id/recycleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/displayNewsList"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/baloo"
+        android:text="Recycle History"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/displayRecycleList"
+        android:layout_width="match_parent"
+        android:layout_height="240sp"
+        android:layout_below="@id/recycleTitle"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/display_recycle_item" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/purple_500"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/nav_menu" />
+
+</RelativeLayout>

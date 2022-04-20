@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/ic_map"
+        android:icon="@drawable/ic_map_white"
+        android:title="Map"/>
+
+    <item
+        android:id="@+id/ic_qrcode"
+        android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+        android:title="Scan"/>
+
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_person_white"
+        android:title="Profile"/>
+
+</menu>

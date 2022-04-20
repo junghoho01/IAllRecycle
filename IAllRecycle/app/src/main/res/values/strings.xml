@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">IAllRecycle</string>
+    <string name="iallrecycle_app">IAllRecycle App</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <string name="recycler_center_sign_up">Recycler Center? <b>Sign Up</b></string>
+    <string name="title_activity_recycle_mapping">RecycleMappingActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dropped_pin">Dropped Pin</string>
+    <string name="poi">poi</string>
+    <string name="title_activity_recycle_record_edit">RecycleRecordEditActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_user_record">UserRecordActivity</string>
+</resources>
