@@ -50,11 +50,11 @@
             android:id="@+id/tvDatetime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/firstLine"
             android:layout_marginStart="16dp"
             android:text="10 April, 18:39"
             android:textColor="@color/darkGray"
-            android:textSize="13sp"
-            android:layout_below="@id/firstLine"/>
+            android:textSize="13sp" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

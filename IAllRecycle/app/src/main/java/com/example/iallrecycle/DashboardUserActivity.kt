@@ -38,6 +38,7 @@ class DashboardUserActivity : AppCompatActivity() {
     // For recycler view for recycle item
     private lateinit var rWasteRecyclerView: RecyclerView
     private lateinit var rWasteArrayList: ArrayList<RecycleWaste>
+    private lateinit var tempArrayList: ArrayList<RecycleWaste>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -185,6 +186,7 @@ class DashboardUserActivity : AppCompatActivity() {
                             val recycleWaste = dataSnapshot.getValue(RecycleWaste::class.java)
                             rWasteArrayList.add(recycleWaste!!)
                         }
+
                         rWasteRecyclerView.adapter = RecycleWasteAdapter(rWasteArrayList)
                     }
                 }

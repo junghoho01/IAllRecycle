@@ -113,7 +113,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/displayRecycleList"
         android:layout_width="match_parent"
-        android:layout_height="240sp"
+        android:layout_height="500sp"
         android:layout_below="@id/recycleTitle"
         android:layout_marginTop="10dp"
         tools:listitem="@layout/display_recycle_item" />

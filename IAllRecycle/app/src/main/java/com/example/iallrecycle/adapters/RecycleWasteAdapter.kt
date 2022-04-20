@@ -21,6 +21,7 @@ class RecycleWasteAdapter(private val recycleWasteList : ArrayList<RecycleWaste>
         val totalPoint = currentItem.glass.toString().toInt() + currentItem.paper.toString().toInt() + currentItem.plastic.toString().toInt() + currentItem.others.toString().toInt()
 
         holder.displayPoints.text = "+ " + totalPoint.toString()
+        holder.displayDate.text = currentItem.date.toString()
     }
 
     override fun getItemCount(): Int {
@@ -29,6 +30,7 @@ class RecycleWasteAdapter(private val recycleWasteList : ArrayList<RecycleWaste>
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val displayPoints : TextView = itemView.findViewById(R.id.tvPointEarned)
+        val displayDate : TextView = itemView.findViewById(R.id.tvDatetime)
 //        val displatDatetime : TextView = itemView.findViewById(R.id.tvDatetime)
     }
 
